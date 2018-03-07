@@ -1,2 +1,5 @@
-# culinary-corner
-Recipe sharing application developed using Node.js, Express, EJS, Passport.js, MongoDB, HTML, CSS
+##### Technology Stack: 
+- NodeJS, Express, PassportJS, MongoDB, HTML, CSS, JavaScript, Bootstrap
+
+##### Developed based on learning from:
+- The Web Developer Bootcamp (Udemy) by Colt Steele

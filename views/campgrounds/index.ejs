@@ -1,0 +1,39 @@
+<% include ../partials/header %>
+<% include ../partials/navbar %>
+
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h2>View our culinarygrounds</h2>
+            <p>Culinary corner is the premier source for information on culinary grounds and recipes. Find the perfect recipe today!</p>
+            <p>
+                <a class="btn btn-primary btn-lg" href="/culinarygrounds/new">Add New recipe</a>
+            </p>
+        </div>
+    </header>
+    
+  
+    <div class="row text-center" style:"display:flex; flex-wrap:wrap;">
+        <% culinarygrounds.forEach(function(culinaryground){%>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img src="<%=culinaryground.image%>" />
+                <div class="caption">
+                    <h4><%=culinaryground.name%></h4>
+                </div>
+                <p>
+                    <a href="/culinarygrounds/<%=culinaryground._id%>" class="btn btn-primary">More info</a>
+                </p>
+            </div>
+        </div>
+        <%  }); %> 
+        
+    </div>
+  
+    
+   
+</div>
+
+
+ 
+<% include ../partials/footer %>
